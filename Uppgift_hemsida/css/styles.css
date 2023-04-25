@@ -1,0 +1,87 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 10px  ;
+
+}
+
+
+
+.logo img {
+  height: 40px;
+  max-width: 100%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: xx-large;
+  font-family: 'Inter';
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 5px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.search img, .cart img {
+  height: 30px;
+  max-width: 100%;
+}
+
+/* Equal spacing between elements */
+header > * {
+  flex: 1;
+  text-align: center;
+}
+
+/* Make div same size as img */
+.search img, .cart img {
+  display: block;
+}
+
+.search, .cart {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  background-color: #F0EEEB;
+}
+
+h1{
+  font-family: 'Inter'; 
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.h1_1{
+  max-width: 850px;
+  font-weight: 200;
+  font-family: 'Inter'; 
+  text-align: center;
+  padding-top: 20px;
+  font-style: italic;
+  margin:0 auto;
+}
+
+.ap{
+  padding-top: 30px;
+}
+

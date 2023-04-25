@@ -1,0 +1,133 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 10px  ;
+  
+  }
+  
+  
+  
+  .logo img {
+    height: 40px;
+    max-width: 100%;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+    font-family: 'Inter';
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .search img, .cart img {
+    height: 30px;
+    max-width: 100%;
+  }
+  
+  /* Equal spacing between elements */
+  header > * {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Make div same size as img */
+  .search img, .cart img {
+    display: block;
+  }
+  
+  .search, .cart {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    margin: 0;
+    background-color: #ffffff;
+  }
+  
+  h1{
+    font-family: 'Inter'; 
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .h1_1{
+    max-width: 850px;
+    font-weight: 200;
+    font-family: 'Inter'; 
+    text-align: center;
+    padding-top: 20px;
+    font-style: italic;
+    margin:0 auto;
+  }
+
+  main{
+    padding: 0 80px;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .product {
+    width: calc(25% - 10px);
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .product p::before {
+    content: "$";
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .product p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .product {
+      width: calc(33.33% - 10px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product {
+      width: 100%;
+    }
+  }
